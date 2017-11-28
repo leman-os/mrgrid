@@ -1,0 +1,168 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.head
+	height: 100vh
+	background-image: url("/img/bghead2.jpg")
+	position: relative
+
+.logo
+	display: inline-block
+	img
+		width: 60px
+.f 
+	font-size: 30px
+	color: #fa9f58
+	font-weight: 700
+.s
+	@extend .f
+	color: #a6d4aa
+.logoname
+	display: inline-block
+	margin-top: 10px
+	position: absolute
+
+.tel
+	@extend .f
+	font-size: 25px
+	margin-top: 10px
+	text-align: center
+	a 
+		color: #fff
+.wt 
+	color: #fff
+	font-size: 12px
+	text-align: center
+#menu
+	width: 100%
+	z-index: 999
+	li 
+		display: inline-block
+		list-style-type: none
+		margin-top: 10px
+		margin-left: 10px
+		a 
+			color: #fff
+			font-size: 18px
+	background-color: rgba(0, 0, 0, 0.7)
+	position: relative
+
+.overhead
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 10
+	background-color: rgba(0, 0, 0, 0.6)
+
+.butm 
+	padding: 15px 25px
+	font-size: 24px
+	text-align: center
+	cursor: pointer
+	outline: none
+	color: #000
+	background-color: #ffd102
+	border: none
+	border-radius: 15px
+	box-shadow: 0 9px #999
+	text-transform: uppercase
+	font-weight: 700
+	margin-top: 80px
+.butm:hover
+	background-color: #3e8e41
+	color: #fff
+
+.butm:active 
+	background-color: #3e8e41
+	box-shadow: 0 5px #666
+	transform: translateY(4px)
+
+h1
+	font-size: 65px
+	color: #fff
+	text-transform: uppercase
+	margin-top: 250px
+	text-align: center
+	margin-bottom: 0
+	padding-bottom: 0
+
+.red
+	color: #99c348
+
+h2 
+	@extend h1
+	font-size: 30px
+	margin-top: 0
+	padding-top: 0
+	color: #ffe4c4
+	
+#myBtn 
+	display: none
+	position: fixed
+	bottom: 20px
+	right: 30px
+	z-index: 99
+	border: none
+	outline: none
+	background-color: red
+	color: white
+	cursor: pointer
+	padding: 15px
+	border-radius: 10px
+#myBtn:hover 
+	background-color: #555
+	
+
+@import "media" // Всегда в конце

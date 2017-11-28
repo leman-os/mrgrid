@@ -22,7 +22,7 @@ $(function() {
 	    	document.getElementById("menu").style.position = "relative";
 	    }
 	};
-
+//com
 });
 
 function topFunction() {

@@ -41,16 +41,25 @@ $(function() {
 
 	//плавный переход к якорю
 	$(document).ready(function(){
-    $(".toplink").click(function(){
-       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top -60+ "px"
-      }, {
-         duration: 1000,
-         easing: "swing"
-      });
-      return false;
-    });
-});
+	    $(".toplink").click(function(){
+	       $("html, body").animate({
+	         scrollTop: $($(this).attr("href")).offset().top -60+ "px"
+	      }, {
+	         duration: 1000,
+	         easing: "swing"
+	      });
+	      return false;
+	    });
+	});
+
+	$(document).ready(function(){
+  		$('.owl-carousel').owlCarousel({
+  			items:3,
+  			autoplay:true,
+  			loop: true,
+  		});
+  		
+	});
 
 });
 

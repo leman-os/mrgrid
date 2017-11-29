@@ -50,16 +50,38 @@ $(function() {
 	      });
 	      return false;
 	    });
-	});
 
-	$(document).ready(function(){
-  		$('.owl-carousel').owlCarousel({
+	    $('#owl1').owlCarousel({
   			items:3,
   			autoplay:true,
   			loop: true,
-  		});
-  		
-	});
+			margin:50, //Отступ от картино если выводите больше 1
+			autoplayHoverPause:true, //Пауза при навидении мыши
+			smartSpeed:1050, //Время движения слайда
+			autoplayTimeout:2000, //Время смены слайда
+  			});
+	    
+	    var owl = $('#owl2');
+
+	    owl.owlCarousel({
+		    items:3,
+  			autoplay:true,
+  			loop: true,
+			margin:50, //Отступ от картино если выводите больше 1
+			autoplayHoverPause:true, //Пауза при навидении мыши
+			smartSpeed:1050, //Время движения слайда
+			autoplayTimeout:2000, //Время смены слайда
+  			});
+		});
+		/*owl.on('mousewheel', '.owl-stage', function (e) {
+		    if (e.deltaY>0) {
+		        owl.trigger('next.owl');
+		    } else {
+		        owl.trigger('prev.owl');
+		    }
+		    e.preventDefault();
+		});*/
+	// });
 
 });
 

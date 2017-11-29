@@ -30,37 +30,23 @@
 
 <body>
 <!-- шапка -->
-<style>
-.head { 
-    /* The image used */
-    background-image: url("img_parallax.jpg");
 
-    /* Set a specific height */
-    height: 500px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
+	<div id="myModal" class="modal">
 
-<div id="myModal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	   <!--  <span class="close">&times;</span> -->
+	    <form action=""><center>	
+	    	<input type="text" name="phone" placeholder="введите ваш телефон" class="inphone">
+	    	<button type="submit" class="butsend">отправить</button>
+	    </center>
+	    </form>
+	  </div>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-   <!--  <span class="close">&times;</span> -->
-    <form action=""><center>	
-    	<input type="text" name="phone" placeholder="введите ваш телефон" class="inphone">
-    	<button type="submit" class="butsend">отправить</button>
-    </center>
-    </form>
-  </div>
+	</div>
 
-</div>
-
-<button onclick="topFunction()" id="myBtn" title="Наверх">Наверх</button>
+	<button onclick="topFunction()" id="myBtn" title="Наверх">Наверх</button>
 	<div class="head" id="head">
 		<div class="overhead">
 		<div class="menu" id="menu">
@@ -104,48 +90,29 @@
 <!-- преимущества -->
 	<div class="preim">
 		<div class="container">
-			<table class="tab">
-				<thead>
-					<tr>
-						<th>столбец1</th>
-						<th>столбец2</th>
-						<th>столбец3</th>
-					</tr>
-				</thead>
-				<tr>
-					<td>пункт1</td>
-					<td>пункт2</td>
-					<td>пункт3</td>
-				</tr>
-				<tr>
-					<td>пункт1</td>
-					<td>пункт2</td>
-					<td>пункт3</td>
-				</tr>
-				<tr>
-					<td>пункт1</td>
-					<td>пункт2</td>
-					<td>пункт3</td>
-				</tr>
-				<tr>
-					<td>пункт1</td>
-					<td>пункт2</td>
-					<td>пункт3</td>
-				</tr>
-				<tr>
-					<td>пункт1</td>
-					<td>пункт2</td>
-					<td>пункт3</td>
-				</tr>
-				<tr>
-					<td>пункт1</td>
-					<td>пункт2</td>
-					<td>пункт3</td>
-				</tr>
-			</table>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Поликарбонатные решетки</h3>
+
+					<div class="itemdark"><img src="img/ok.png" alt=""><div class="wrap">Полностью прозрачные решетки. Ни что не мешает обзору</div></div>
+
+					<div class="itemlight"><img src="img/ok.png" alt=""><div class="wrap">Не ржавеют. Не выцветают. Не требуют покраски</div></div>
+
+					<div class="itemdark"><img src="img/ok.png" alt=""><div class="wrap">Не требуется согласование с Управляющей Компанией ни на первом этаже ни на верхних. </div></div>
+
+					<div class="itemdark"><div class="ok"></div><p></p></div>
+				</div>
+				<div class="col-md-6">
+					<h3>Металлические решетки</h3>
+					<div class="itemdark"><div class="no"></div><p>Не прозрачные. Ощущения как в темнице</p></div>
+					<div class="itemlight"><div class="no"></div><p>Со временем ржавеют. Требуется повторная покраска</p></div>
+					<div class="itemdark"><div class="no"></div><p>При установке требуется согласование с Управляющей Компанией. В случае, установки на верхних этажах, одобрение практически невозможно</p></div>
+				</div>
+			</div>
 		</div>
+		<div class="clearfix"></div>
 	</div>
-	<!-- .preim>.container>table.tab>(thead>tr>th{столбец$}*3)+(tr>td{пункт$}*3)*6 -->
+	
 <!-- преимущества конец -->
 
 <!-- заказ звонка -->
@@ -160,7 +127,7 @@
 			</form>
 		</div>
 	</div>
-	<!-- .zakaz>.container>form[id=zvonok method=POST class=zvonclass onsubmit="return false"]>(h2{Закажите бесплатный звонок прямо сейчас}+h3{и получите консультацию специалиста})+input[type=text name=query class=zvonin placeholder="+7 ( ___ ) ___ - __ - __"]+button[class=btnzv type=submit]{заказать звонок}+input[type=hidden name="hidzvon" value="0"] -->
+
 <!-- заказ звонка конец -->
 
 <!-- о нас -->
@@ -170,7 +137,7 @@
 			<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Агенство пояс, встретил выйти рыбными инициал за ipsum образ языкового жаренные сих коварный буквенных даль снова несколько, большого бросил живет моей рекламных! Последний безорфографичный вопроса первую курсивных дал снова, ему однажды семантика текст рыбными языкового эта жизни силуэт назад алфавит, но текста рукописи ее даль продолжил буквоград, рекламных возвращайся семь журчит! Строчка маленькая коварных не, над снова. Журчит напоивший имени рот, домах единственное. Семь последний путь буквенных дороге запятой, которой предупредила единственное возвращайся от всех, рекламных языкового вскоре! Имени текстов рукопись на берегу прямо! Текста использовало она речью lorem, возвращайся жизни, пустился!</p>
 		</div>
 	</div>
-	<!-- .about>.container>h2{НЕМНОГО О НАС}+p{Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Агенство пояс, встретил выйти рыбными инициал за ipsum образ языкового жаренные сих коварный буквенных даль снова несколько, большого бросил живет моей рекламных! Последний безорфографичный вопроса первую курсивных дал снова, ему однажды семантика текст рыбными языкового эта жизни силуэт назад алфавит, но текста рукописи ее даль продолжил буквоград, рекламных возвращайся семь журчит! Строчка маленькая коварных не, над снова. Журчит напоивший имени рот, домах единственное. Семь последний путь буквенных дороге запятой, которой предупредила единственное возвращайся от всех, рекламных языкового вскоре! Имени текстов рукопись на берегу прямо! Текста использовало она речью lorem, возвращайся жизни, пустился!} -->
+	
 <!-- о нас конец -->
 
 <!-- сертификаты -->
@@ -206,7 +173,7 @@
 			</form>
 		</div>
 	</div>
-	<!-- .zakaz>.container>form[id=zvonok method=POST class=zvonclass onsubmit="return false"]>(h2{Закажите бесплатный звонок прямо сейчас}+h3{и получите консультацию специалиста})+input[type=text name=query class=zvonin placeholder="+7 ( ___ ) ___ - __ - __"]+button[class=btnzv type=submit]{заказать звонок}+input[type=hidden name="hidzvon" value="0"] -->
+	
 <!-- заказ звонка конец -->
 
 <!-- примеры работ -->

@@ -2,6 +2,8 @@
 @import "libs"
 @import "vars"
 
+$pc: #fafafa
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -238,7 +240,7 @@ h2
 	cursor: pointer
 
 .preim
-	background-color: #fafafa
+	background-color: $pc
 	h3
 		text-align: center
 		text-transform: uppercase
@@ -270,7 +272,31 @@ h2
 .clear
 	height: 50px
 
-
-
-
+.zakaz
+	background-color: #fff
+	h2
+		margin: 0
+		margin-top: 20px
+		color: #8e8c8c
+	h3
+		text-align: center
+		color: #b5adad
+		margin-top: 0
+.zvonclass
+	text-align: center
+	margin-bottom: 30px
+.btnzv
+	background-color: rgb(255, 168, 0)
+	border-radius: 4px
+	border: 1px rgb(204, 134, 0) solid
+	padding: 12px 20px
+	font-size: 21px
+	color: rgb(255, 255, 255)
+.zvonin
+	border-radius: 4px
+	border: 1px rgb(204, 134, 0) solid
+	padding: 12px 20px
+	font-size: 21px
+.about 
+	background-color: $pc
 @import "media" // Всегда в конце
